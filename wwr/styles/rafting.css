@@ -30,9 +30,6 @@ footer {
     margin: 0 auto;
 }
 
-footer * {
-    margin: 0;
-}
 
 h1,
 h2 {
@@ -71,8 +68,8 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent2-color);
-    color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
+    color: #a15252;
+    border: solid ;
 }
 
 .hero article {
@@ -97,3 +94,6 @@ h1 {
 
 }
 
+footer * {
+    margin: 0;
+}
