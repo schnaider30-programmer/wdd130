@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #587291;
+    --secondary-color: #2F97C1;
+    --accent1-color: #1CCAD8;
+    --accent2-color: #15E6CD;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Ubuntu";
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 15px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent2-color);
+    color: #fff;
+    /* white text - make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    color: var(--accent1-color);
+}
+
+.hero article img {
+    float: right;
+    margin: 20px;
+    width: 150px;
+    border: solid 1px rgba(11, 55, 150, 1);
+    box-shadow: 0 0 30px rgb(28, 132, 217);
+}
+
+.socialmedia a img {
+    width: 20px;
+
+}
+
+footer * {
+    margin: 0;
+}
