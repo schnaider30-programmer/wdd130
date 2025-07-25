@@ -5,18 +5,30 @@
 }
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto";
+
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(4, 4, 69);
+    border-bottom: 1px solid ;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: italic;
 }
 
 main img {
@@ -30,24 +42,27 @@ main img {
     float: right;
 }
 
-p {
-    padding: 0;
+.grid {
+    display:grid;
+    font-family: "Roboto";
 }
 
 main {
-    max-width: 1000px;
+    grid-column: 2/3;
 }
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
     position: absolute;
     left: 40%;
-    
+    top: 2rem;
 }
 
 aside img {
@@ -56,9 +71,16 @@ aside img {
 }
 
 footer {
-    margin-top: 200px;
-    border-top: 1px solid white;
+    border-top: 1px solid steelblue;
     text-align: center;
+    font-family: "Playfair Display";
+    padding: 10px;
+    font-style: italic;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 /*Class Selectors*/
@@ -74,3 +96,4 @@ footer {
 .indent {
     padding-left: 2rem;
 }
+
