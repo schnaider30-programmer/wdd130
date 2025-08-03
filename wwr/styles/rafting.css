@@ -181,6 +181,8 @@ h1 {
 }
 
 .employee {
+    margin: 15px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-around;
     gap: 1.5rem;
@@ -201,11 +203,8 @@ h1 {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: left;
     margin: 0 10px;
     padding: 0;
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
 }
 
 .adress {
@@ -214,6 +213,13 @@ h1 {
 
 .contact p {
     margin: 0;
+    padding: 0;
+}
+
+.strong {
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
 }
 
 label {
@@ -230,6 +236,7 @@ label {
     margin-top: 140px;
     width: 100%;
     max-width: 100%;
+    padding: 10px;
 }
 
 form {
