@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Schnaider Jean Louis - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Schnaider Jean Louis - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- form elements will go there -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail">
+
+                <!-- Another valid way to write this is to surround the input elements with the label element. This is called the "implicit label" method. The following is an example of this method:
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <label>Email: <input type="email" name="useremail"></label>
+                </fieldset> -->
+
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- form elements will go there -->
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="FireFox">Firefox</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" name="pet" id="pet"><br>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Stillwater Florida, Jamaica, Tobago, Ascuncion"></textarea><br>
+            </fieldset>
+            <button type="button">Submit Poll</button>
+        </form>
+
+
+    </main>
+    <footer>
+        <p>
+            ©2025 | HTML Form - User Poll Activity | Schnaider Jean Louis
+        </p>
+    </footer>
+</body>
+
+</html>
